@@ -3,11 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>laelll</title>
+  <title>Formularios</title>
 </head>
 
 
-<body>
+<body bgcolor="black" text="white">
+    <center>
+<h1>FORMULARIOS</h1><hr>
+
+    </center>
+    <form action="" method="get" enctype="text/plain"> 
+        <table border="" width="90" style="margin: auto;" cellspacing="0">
+            <tr align="center">
+                <td><h1>NOMBRE</h1></td>
+                <td><h1>DESCRIPCION</h1></td>
+                <td><h1>EJEMPLO</h1></td>
+            </tr>
+            <tr>
+                <td>CAMPO DE TEXTO</td>
+                <td>Sirve para recipilar informacion</td>
+                <td><input type="text" name="nombre" id="nombre" placeholder="INTRODUCE TU NOMBRE" required value="lael" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td>CAMPO CONTRASEÑA </td>
+                <td>OCULTA LOS CAMPOS CUANDO ESCRIBES </td>
+                <td><input type="password" name="password" id="password" placeholder="CONTRASEÑA"></td>
+            </tr>
+            <tr>
+                <td>CASILLA VERIFICACION </td>
+                <td></td>
+                <td><input type="checkbox"> <input type="checkbox" checked></td>
+            </tr>
+            <tr>
+                <td>BOTON RADIO </td>
+                <td></td>
+                <td><input type="radio" name="boton1"><input type="radio" name="boton2" id="boton2" checked>
+
+                </td>
+            </tr>
+            <tr>
+                <td>CAMPO OCULTO</td>
+                <td></td>
+                <td><input type="hidden" name="oculto" id="oculto" value="Mi contraseña es:1717"></td>
+            </tr>
+            <tr>
+                <td>AREA DE TEXTO </td>
+                <td></td>
+                <td><textarea name="texto" id="texto" cols="30" rows="10" nosize></textarea></td>
+            </tr>
+            <tr>
+                <td>LISTA DESPEGABLE</td>
+                <td></td>
+                <td><select name="lista" id="lista">
+                    <option value="lael">lael</option>
+                    <option value="ismael">ismael</option>
+                    <option value="gerson">gerson</option>
+                    <option value="lael">lael</option>
+                    <option value="menorcito">menorcito</option>
+
+                </select>
+            </td>
+
+            </tr>
+            <tr>
+                <td>BOTON ENVIAR</td>
+                <td>boton mas importante del mundo</td>
+                <td><input type="submit" value="enviar"></td>
+            </tr>
+            <tr>
+                <td>boton image</td>
+                <td></td>
+                <td><input type="image" src="lambo.jpg"></td>
+            </tr>
+
+            <tr>
+                <td>BOTON BORRAR</td>
+                <td></td>
+                <td><input type="reset" value="BORRAR"></td>
+            </tr>
+            <tr>
+                <td>BOTON COLOR </td>
+                <td></td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td> BOTON COMANDO</td>
+                <td></td>
+                <td><input type="button" value="ACEPTAR"></td>
+            </tr>
+
+            <tr>
+                <td>CAMPO FECHA</td>
+                <td></td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>FECHA Y HORA</td>
+                <td></td>
+                <td><input type="datetime" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>FECHA Y HORA local 2</td>
+                <td></td>
+                <td><input type="datetime-local" name="" id=""></td>
+            </tr>
+
+            <tr>
+                <td>CAMPO EMAIL</td>
+                <td></td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>CAMPO ARCHIVO</td>
+                <td></td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+
+            <tr>
+                <td>MES DEL AÑO </td>
+                <td></td>
+                <td><input type="month" name="" id=""></td>
+            </tr>
+            <tr>
+                <td> CAMPO NUMERICO</td>
+                <td></td>
+                <td><input type="number" name="" id="" step=".5" value="0"></td>
+            </tr>
+            <tr>
+                <td>BARRA DE DELIZAMIENTO</td>
+                <td></td>
+                <td><input type="number" name="" id="" value="0" max="100"></td>
+            </tr>
+            <tr>
+                <td>CAMPO BUSQUEDA</td>
+                <td></td>
+                <td><input type="search" name="" id=""></td>
+            </tr>
+
+            <tr>
+                <td>TELEFONO</td>
+                <td></td>
+                <td><input type="tel" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>CAMPO HORA</td>
+                <td></td>
+                <td><input type="time" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td></td>
+                <td><input type="url" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>SEMANA</td>
+                <td></td>
+                <td><input type="week" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>LISTA OCULTA</td>
+                <td></td>
+                <td><input list="paises" type="text"></td>
+                <datalist id="paises">
+                    <option value="mexico"></option>
+                    <option value="seattle"></option>
+                    <option value="españa"></option>
+                    <option value="utha"></option>
+                </datalist>
+            </tr>
+
+            <tr>
+                <td>BARRA DE PROGRESO</td>
+                <td></td>
+                <td><progress id="file" max="100" value="70">70%</progress>></progress></td>
+            </tr>
+
+            <tr>
+                <td>ESTETICO</td>
+                <td></td>
+                <td>
+                    <fieldset>
+                        <legend>DATOS PERONALES</legend>
+                        nombre <br/>
+                        <input type="text" name="nombre" value="" />
+                        <br/>
+                        Apellido <br/>
+                        <input type="text" name="Apellido" value="" />
+                        <br/>
+                        DNI <br/>
+                        <input type="text" name="DNI" value="" />
+                        <br/>
+
+
+                </fieldset></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+
+        </table>  
+         
+
+
+
+
+    </form>
   
 
 
